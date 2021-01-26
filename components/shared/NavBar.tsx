@@ -6,8 +6,9 @@ import "../../styles/nav.css";
 const NavBar = () => {
   return (
     <>
-      <ul>
-        <li>
+      <ul className = "navBar">
+        메뉴가 들어갈거에요!
+        {/* <li>
           <Link href="/">
             <a>Home</a>
           </Link>
@@ -21,17 +22,8 @@ const NavBar = () => {
           <Link href="/posts">
             <a>Posts</a>
           </Link>
-        </li>
+        </li> */}
       </ul>
-
-      <style jsx>{`
-        li {
-          display: inline-block;
-          color: tomato;
-          margin-right: 20px;
-          cursor: pointer;
-        }
-      `}</style>
     </>
   );
 };

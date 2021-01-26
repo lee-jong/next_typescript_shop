@@ -1,0 +1,28 @@
+/* Banner */
+.banner { height: 70px; background-color: yellow;}
+
+/* NavBar */
+.navBar {height: 76px; background-color: red;}
+
+/* Body */
+.body { height: 100%; background-color: hotpink;}
+
+/* ImageBanner */
+.imageBanner {height: 300px; background-color: indigo;}
+
+/* imageCard */
+.imageCard { height: 90%; background-color: maroon; width : 300px;}
+
+/* Sales */
+.Sales {height: 500px; background-color: ivory; display: flex; width: 80%; @media screen and (width: 600px){
+    width : 600px
+}}
+
+/* newProduct */
+.newProduct {height: 500px; background-color: lawngreen;}
+
+/* Review */
+.review {height: 500px; background-color: lightcoral;}
+
+/* Footer */
+.footer {height: 300px; background-color: green;}
