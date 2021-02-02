@@ -1,11 +1,22 @@
 import React from 'react'
 
-const ImageCard  = () =>{
+interface imageCardProps { 
+    page : Number;
+}
+
+const ImageCard  = ({page} : imageCardProps) =>{
     return (
         <>
-            <div className ="imageCard">
-                Card!
-            </div>
+        {page == 1 ? 
+            <img className ="imageCard"
+                 src = "../../static/images/dev.jpg"
+            /> 
+            :
+            <img className ="imageCard"
+                 src = "../../static/images/dev.jpg"
+            />
+        }
+         
         </>
     )
 }

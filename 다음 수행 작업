@@ -1,4 +1,8 @@
-현재 - imageCard - Media 속성을 건드리고 있음 !
-    + https://developer.mozilla.org/ko/docs/Learn/CSS/CSS_layout/%EB%AF%B8%EB%94%94%EC%96%B4_%EC%BF%BC%EB%A6%AC_%EC%B4%88%EB%B3%B4%EC%9E%90_%EC%95%88%EB%82%B4%EC%84%9C
-    + Media 쿼리라는 것을 한 번 확인해보자.
-    + 페이지창을 줄이는 것에 대해 최소 값 지정이 필요함 (요건)
+# 모티브  - https://www.zardins.com/?_sta1=MUwwTDEwMDJMU0wyOTUxTDBMMEwwTE5MMDAw
+
+현재 - imageCard - 슬라이드 만들기
+1. 현재 일단 image 다른 걸로 주고, 버튼 이벤트로 css를 주는 것
+2. 라이브러리를 사용 하는 것
+3. 잘 만들어진 예제를 참고하여 만드는 것 
+
+1,2,3 중 고민중...
