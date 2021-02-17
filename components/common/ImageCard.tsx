@@ -1,23 +1,22 @@
 import React from 'react'
 
 interface imageCardProps { 
-    page : Number;
+    imageInfo : {
+        index : number
+        url : string
+        title : string
+        content : string
+    };
 }
 
-const ImageCard  = ({page} : imageCardProps) =>{
+const ImageCard  = ({imageInfo} : imageCardProps) =>{
+    let { url } = imageInfo
     return (
-        <>
-        {page == 1 ? 
+        <div className="card">
             <img className ="imageCard"
-                 src = "../../static/images/dev.jpg"
+                src = { url }
             /> 
-            :
-            <img className ="imageCard"
-                 src = "../../static/images/dev.jpg"
-            />
-        }
-         
-        </>
+        </div>
     )
 }
 

@@ -1,8 +1,17 @@
+# 해야할 일 
+1. 상단 이미지 제작
+
+
+
 # 모티브  - https://www.zardins.com/?_sta1=MUwwTDEwMDJMU0wyOTUxTDBMMEwwTE5MMDAw
 
-현재 - imageCard - 슬라이드 만들기
-1. 현재 일단 image 다른 걸로 주고, 버튼 이벤트로 css를 주는 것
-2. 라이브러리를 사용 하는 것
-3. 잘 만들어진 예제를 참고하여 만드는 것 
 
-1,2,3 중 고민중...
+* main slider 
+https://www.npmjs.com/package/react-simple-image-slider
+
+
+
+
+* typeScript 
+https://react.vlpt.us/using-typescript/01-practice.html
+
