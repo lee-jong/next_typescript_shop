@@ -3,7 +3,9 @@ import React from "react";
 const Banner = () => {
   return (
     <>
-      <div className="banner"> 광고 이미지가 들어갈 거에요</div>
+      <div className="banner"> 
+        <img src = "../../static/images/Top-Banner.png"/>
+      </div>
     </>
   );
 };
