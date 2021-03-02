@@ -34,9 +34,14 @@ class NavBar extends React.Component {
           }
           <ul>
             <li>
-              <Link href="/">
                 <a>Home</a>
-              </Link>
+                <ul>
+                  <li>zio</li>
+                  <li>zio</li>
+                  <li>zio</li>
+                  <li>zio</li>
+                  <li>zio</li>
+                </ul>
             </li>
             <li>
               <Link href="/">
