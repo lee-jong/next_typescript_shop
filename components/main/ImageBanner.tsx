@@ -35,6 +35,9 @@ class ImageBanner extends React.Component<{}, State> {
         return (
             <>
                 <div className ="imageBanner">
+                    <img className ="imageCard"
+                        src = '../../static/images/bannerImage.jpg'
+                    /> 
                     {/* <SimpleImageSlider width ={width} height={height} images={images} showNavs={showNavs} showBullets={showBullets}/> */}
                 </div>
             </>
