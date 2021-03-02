@@ -9,7 +9,7 @@ interface imageCardProps {
     };
 }
 
-const ImageCard  = ({imageInfo} : imageCardProps) =>{
+const ImageCard  = ({ imageInfo } : imageCardProps) =>{
     let { url } = imageInfo
     return (
         <div className="card">

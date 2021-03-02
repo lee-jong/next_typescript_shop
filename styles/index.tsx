@@ -1,7 +1,7 @@
 import React from 'react';
-import NavBar from '../components/shared/NavBar';
-import axios from 'axios';
-import Link from 'next/link';
+// import NavBar from '../components/shared/NavBar';
+// import axios from 'axios';
+// import Link from 'next/link';
 
 class Home extends React.Component {
   render() {

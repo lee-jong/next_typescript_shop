@@ -3,6 +3,8 @@ import Link from "next/link";
 
 import "../../styles/nav.css";
 
+import UserInfo from './UserInfo'
+
 
 class NavBar extends React.Component {
   state = {
@@ -13,8 +15,8 @@ class NavBar extends React.Component {
     window.addEventListener('scroll', this.handleScroll);
   }
 
-  handleScroll = (e) => {
-    let scrollTop = e.srcElement.scrollingElement.scrollTop
+  handleScroll = ( e: { srcElement: any | undefined; } ) => {
+    let scrollTop = e.srcElement != undefined && e.srcElement.scrollingElement.scrollTop
     this.setState({ scrollTop })
   }
 
@@ -22,10 +24,32 @@ class NavBar extends React.Component {
     let { scrollTop } = this.state
     return (
       <>
-      {/* "navBar" */}
-        <ul className = {"navBar " + (scrollTop >= 100 && 'navBarFixed')} >
-          메뉴가 들어갈거에요!
-        </ul>
+        <div className = {"navBar " + (scrollTop >= 100 && 'navBarFixed')} >
+          {scrollTop >= 100 ? 
+            <UserInfo />
+            :
+            <img className ="imageCard"
+                src = '../../static/images/Logo.png'
+            /> 
+          }
+          <ul>
+            <li>
+              <Link href="/">
+                <a>Home</a>
+              </Link>
+            </li>
+            <li>
+              <Link href="/">
+                <a>Home</a>
+              </Link>
+            </li>
+            <li>
+              <Link href="/">
+                <a>Home</a>
+              </Link>
+            </li>
+          </ul>
+        </div>
       </>
     );
   }

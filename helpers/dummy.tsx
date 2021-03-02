@@ -10,3 +10,13 @@ export const SalesImage = [{index : 0, url : '../../static/images/dev.jpg', titl
                            {index : 9, url : '../../static/images/dev2.jpg', title: 'dummyImage10', content : 'textImage'}]
 
 
+                           export const SalesImage2 = [
+                            {url : '../../static/images/dev.jpg'},
+                           {url : '../../static/images/dev.jpg'},
+                           {url : '../../static/images/dev.jpg'},
+                           {url : '../../static/images/dev.jpg'},
+                           {url : '../../static/images/dev2.jpg'},
+                           {url : '../../static/images/dev2.jpg'},
+                           {url : '../../static/images/dev2.jpg'},
+                           {url : '../../static/images/dev2.jpg'}]
+
