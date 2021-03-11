@@ -14,7 +14,6 @@ class Sales extends React.Component {
     }
 
     next = () : void => {
-        console.log("next")
         let { page, maxPage } = this.state
         if(maxPage <= page) {
             this.setState({
