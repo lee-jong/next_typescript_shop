@@ -2,7 +2,7 @@ import React from 'react'
 import * as Icon from 'react-bootstrap-icons';
 
 // Component
-import ImageCard from '../common/ImageCard'
+import ImageSlideCard from '../common/ImageSlideCard'
 // Util
 import { SalesImage, perPage } from '../../helpers/dummy'
 
@@ -52,7 +52,7 @@ class Sales extends React.Component {
                         <Icon.ChevronCompactRight onClick={this.next} size={30}/>
                         <div className="Slide_Container" style={{ transform : 'translate(-' + (page - 1) * 1353.5 + 'px, 0px)' }}>
                             {SalesImage.map((item, index) => 
-                                <ImageCard imageInfo={item} key = {index}/>
+                                <ImageSlideCard imageInfo={item} key = {index}/>
                                 )}
                         </div>
                         <Icon.ChevronCompactLeft onClick={this.pre} size={30}/>

@@ -9,7 +9,7 @@ interface imageCardProps {
     };
 }
 
-const ImageCard  = ({ imageInfo } : imageCardProps) =>{
+const ImageSlideCard  = ({ imageInfo } : imageCardProps) =>{
     let { url } = imageInfo
     return (
         <div className="card">
@@ -20,4 +20,4 @@ const ImageCard  = ({ imageInfo } : imageCardProps) =>{
     )
 }
 
-export default ImageCard
+export default ImageSlideCard
