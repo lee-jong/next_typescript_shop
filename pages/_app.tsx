@@ -13,6 +13,7 @@ class MyApp extends App {
     return { pageProps };
   }
 
+
   render() {
     const { Component, pageProps } = this.props;
     return (
