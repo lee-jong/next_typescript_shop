@@ -12,7 +12,7 @@ interface ImageList {
     color : string[]
 }
 
-interface Props {
+interface  Props {
     list : ImageList[];
 }
 

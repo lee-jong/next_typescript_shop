@@ -53,8 +53,8 @@ h1 span:nth-child(2) { padding-top: 5px; font-size: 12px; font-weight: bold; col
 .imageBanner {height: 500px; background-color: indigo;}
 .imageBanner img { width:100%; height: 100%;}
 
-/* Sales */
-.Sales {height: 700px; background-color: ivory; width : 1343.3px;  margin:0 auto; padding-top: 80px;}
+/* Popularity */
+.Popularity {height: 700px; background-color: ivory; width : 1343.3px;  margin:0 auto; padding-top: 80px;}
 
 /* imageCard */
 .card {width: 100%; height: 400px; margin : 50px 10px 100px 0px;}
@@ -68,7 +68,7 @@ h1 span:nth-child(2) { padding-top: 5px; font-size: 12px; font-weight: bold; col
 
 /* Slide */
 .Slide { height : 100%; width : 100%; display: flex; position: relative; overflow:hidden;}
-.Sales h1 { padding-top:2% }
+.Popularity h1 { padding-top:2% }
 .Slide svg { position: absolute; z-index: 10; top:7.5%;  height:60%; opacity: 0.5; width:50px; left:0.3%}
 .Slide svg:nth-child(1){ left : 96%;} 
 .Slide_Container { height : 100%; width : 100%;  display: flex;  transition: 0.6s;}

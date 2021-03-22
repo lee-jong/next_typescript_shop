@@ -2,13 +2,24 @@ import React from 'react'
 import ImageCard from '../common/ImageCard'
 
 
-class Review extends React.Component {
-    state = {
-        item : ['1','2','3','4','5','6']
-    
-    }
+
+interface ImageList {
+    id : number,
+    title : string,
+    sub: string,
+    image : string,
+    price : number,
+    sale : number,
+    color : string[]
+}
+
+interface  Props {
+    list : ImageList[];
+}
+
+class Review extends React.Component<Props> {
     render(){
-        let { item } = this.state
+        let { list } = this.props
         return (
             <>
                 <div className="review">
@@ -17,9 +28,9 @@ class Review extends React.Component {
                         <span>SubTitle</span>
                     </h1>
                     <div className="imageBoard">
-                        {/* {item.map((item, index) => 
-                            <ImageCard key={index}/>
-                        )} */}
+                        {list.map((item : ImageList, index) => 
+                            <ImageCard  key={index} item={item}/>
+                        )}
                     </div>
                 </div>
             </>

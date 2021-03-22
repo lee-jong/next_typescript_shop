@@ -19,7 +19,6 @@ interface Props {
 class ImageCard extends React.Component<Props> {
     render (){
         let { image, title, sub, price, color, sale } = this.props.item
-        console.log("check object", this.props.item)
         return (
             <>
                 <div className="imageBoard_card">

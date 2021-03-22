@@ -4,41 +4,38 @@ import React from 'react';
 import ImageBanner from '../components/main/ImageBanner'
 import NewProduct from '../components/main/NewProduct'
 import Review from '../components/main/Review'
-import Sales from '../components/main/Sales'
+import Popularity from '../components/main/Popularity'
 
-import { DummyNewProductImg } from '../helpers/dummy'
+import { DummyNewProductImg, DummyReviewImg, PublicImage } from '../helpers/dummy'
 
-interface ImageList {
-  id : Number,
-  title : String,
-  sub: String,
-  url : String,
-  price : Number,
-  sale : Number,
-  color : String[]
-}
 
-interface Props {
-  newProductList : ImageList[];
+interface imageList {
+  newProductList : Array<any>;
+  reviewList : Array<any>;
+  publicList : Array<any>;
 }
 
 
-class Home extends React.Component<Props> {
+class Home extends React.Component<imageList> {
   static async getInitialProps({}) {
     let newProductList = await DummyNewProductImg
+    let reviewList = await DummyReviewImg
+    let publicList = await PublicImage
     return {
-      newProductList
+      newProductList,
+      reviewList,
+      publicList
     };
   }
   render() {
-    let { newProductList } = this.props
+    let { newProductList, reviewList, publicList } = this.props
     return (
       <>
         <div className="body">
             <ImageBanner />
-            <Sales />
-            <NewProduct list ={ newProductList }/>
-            <Review />
+            <Popularity list = {publicList}/>
+            <NewProduct list = { newProductList }/>
+            <Review list = { reviewList }/>
         </div>
       </>
     );

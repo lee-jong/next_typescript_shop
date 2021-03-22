@@ -2,19 +2,19 @@ import React from 'react'
 
 interface imageCardProps { 
     imageInfo : {
-        index : number
-        url : string
+        id : number
+        image : string
         title : string
         content : string
     };
 }
 
 const ImageSlideCard  = ({ imageInfo } : imageCardProps) =>{
-    let { url } = imageInfo
+    let { image } = imageInfo
     return (
         <div className="card">
             <img className ="imageCard"
-                src = { url }
+                src = { image }
             /> 
         </div>
     )

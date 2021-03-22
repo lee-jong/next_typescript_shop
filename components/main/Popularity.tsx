@@ -4,13 +4,24 @@ import * as Icon from 'react-bootstrap-icons';
 // Component
 import ImageSlideCard from '../common/ImageSlideCard'
 // Util
-import { SalesImage, perPage } from '../../helpers/dummy'
+import { perPage } from '../../helpers/dummy'
 
 
-class Sales extends React.Component {
+interface ImageList {
+    id : number,
+    title : string,
+    content: string,
+    image : string,
+}
+
+interface  Props {
+    list : ImageList[];
+}
+
+class Sales extends React.Component<Props> {
     state = {
         page : 1,
-        maxPage : SalesImage.length / perPage
+        maxPage : this.props.list.length / perPage
     }
 
     next = () : void => {
@@ -43,15 +54,15 @@ class Sales extends React.Component {
         let { page } = this.state
         return (
             <>
-                <div className="Sales">
+                <div className="Popularity">
                     <h1>
-                        <span>세일 상품</span>
+                        <span>인기 상품</span>
                         <span>SubTitle</span>
                     </h1>
                     <div className="Slide">
                         <Icon.ChevronCompactRight onClick={this.next} size={30}/>
                         <div className="Slide_Container" style={{ transform : 'translate(-' + (page - 1) * 1353.5 + 'px, 0px)' }}>
-                            {SalesImage.map((item, index) => 
+                            {this.props.list.map((item, index) => 
                                 <ImageSlideCard imageInfo={item} key = {index}/>
                                 )}
                         </div>
