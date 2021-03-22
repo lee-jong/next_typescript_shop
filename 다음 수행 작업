@@ -1,7 +1,5 @@
 # 해야할 일 
-0. props 으로 전달된 type의 정이가 다른 듯 하다. 찾아보자.
-1. 리뷰 페이지 개발
-2. Router 기능 
+1. 로그인 페이지 퍼블
 
 
 # 고질적인 문제 ( 해결해보자 후에..)
@@ -20,6 +18,9 @@ https://www.npmjs.com/package/react-simple-image-slider
 
 * typeScript 
 https://react.vlpt.us/using-typescript/01-practice.html
+
+* 로그인 passport ( naver, kakao )
+https://cheese10yun.github.io/passport-thirdpart-loginl/
 
 
 * 유용한 페이지

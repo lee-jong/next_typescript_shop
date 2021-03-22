@@ -6,7 +6,11 @@ import "../../styles/nav.css";
 import UserInfo from './UserInfo'
 
 
-class NavBar extends React.Component {
+interface Props {
+  nowPage : string
+}
+
+class NavBar extends React.Component<Props> {
   state = {
     scrollTop : 0
   }
@@ -22,12 +26,14 @@ class NavBar extends React.Component {
 
   render(){
     let { scrollTop } = this.state
+    let { nowPage } = this.props
     return (
       <>
         <div className = {"navBar " + (scrollTop >= 100 && 'navBarFixed')} >
           {scrollTop >= 100 ? 
             <UserInfo />
             :
+            nowPage == '/' && 
             <img className ="imageCard"
                 src = '../../static/images/Logo.png'
             /> 

@@ -17,7 +17,7 @@ interface imageList {
 
 
 class Home extends React.Component<imageList> {
-  static async getInitialProps({}) {
+  static async getInitialProps({ctx} : any) {
     let newProductList = await DummyNewProductImg
     let reviewList = await DummyReviewImg
     let publicList = await PublicImage
