@@ -1,13 +1,16 @@
 import React from 'react'
+import { $nextRouter } from '../../helpers/nextUtil'
 
 class UserInfo extends React.Component {
     render() {
         return (
             <div className = "userInfo">
                 <div>
-                    <span>로그인</span>
+                    <span onClick={() => $nextRouter('/')}>홈</span>
                     <span className="bar"/>
-                    <span>회원가입</span>
+                    <span onClick={() => $nextRouter('/login')}>로그인</span>
+                    <span className="bar"/>
+                    <span onClick={() => $nextRouter('/user/join')}>회원가입</span>
                 </div>
                 <div>
                     <span>장바구니</span>

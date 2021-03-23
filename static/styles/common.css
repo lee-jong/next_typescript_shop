@@ -15,6 +15,7 @@ input:focus::placeholder { color : transparent}
 button { border : none }
 .btn-gray{ background-color: #888; color : white}
 .btn-black{ background-color: #2a2b2c; color : white}
+.btn-white{ background-color: white; color : black}
 
 /* font & 기타 */
 .font_mini { font-size: 10px;}
@@ -51,9 +52,27 @@ h1 span:nth-child(2) { padding-top: 5px; font-size: 12px; font-weight: bold; col
 .loginFooter { padding : 0 10% 0 10%; }
 .loginFooter button { width: 400px; height : 50px; margin-top:30px }
 
+/* User Join*/
+.userJoin { height: 900px; margin-top:40px;}
+.userJoinContainer { margin : 0 auto; width :1000px;} 
+.userJoinContainer .title { text-align: center; font-size: 30px; font-weight: normal; }
+.userJoinBox { margin-top:60px;}
+.userContent { border-top : 0.1px solid #e8e8e8; height: 38px; padding-top:12px; }
+.userContent span:nth-child(1) { margin-top : 4px;display : inline-block; width: 120px; padding-left : 40px;}
+.userContent span { font-size: 11px;}
+.userContent input { width : 300px; height: 25px; border: 0.1px solid #e8e8e8; border-radius: 5px;}
+.userContent input:focus { border-color: #888;}
+.userContent .addr { display: inline-grid; }
+.userContent .addr div:not(:first-child) { margin-top: 7px;}
+.userContent .addr span{ width: 70px; font-size: 10px;}
+.userContent .addr button{ margin-left:3px; height: 25px; border: 0.1px solid #e8e8e8; border-radius: 5px; font-size: 10px;}
+.userContent .addr button:hover{ border-color: #888;}
+.userJoinBox .userContent:nth-child(6) { height: 110px;}
+.userJoinFooter button { margin-top: 140px;width:1000px; height: 80px;}
+
 /* Banner */
 .banner { width: 100%; height: 70px; background-color: yellow; }
-.banner img{ width:100%; height: 100%;}
+.banner img{ width:100%; height: 100%; }
 
 
 /* NavBar */

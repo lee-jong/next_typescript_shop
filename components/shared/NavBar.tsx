@@ -1,10 +1,6 @@
 import React from "react";
 import Link from "next/link";
-
-import "../../styles/nav.css";
-
 import UserInfo from './UserInfo'
-
 
 interface Props {
   nowPage : string
