@@ -13,7 +13,7 @@ class UserInfo extends React.Component {
                     <span onClick={() => $nextRouter('/user/join')}>회원가입</span>
                 </div>
                 <div>
-                    <span>장바구니</span>
+                    <span onClick={() => $nextRouter('/basket')}>장바구니</span>
                     <span className="bar"/>
                     <span>마이페이지</span>
                     <span className="bar"/>
