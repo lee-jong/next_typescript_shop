@@ -70,8 +70,29 @@ h1 span:nth-child(2) { padding-top: 5px; font-size: 12px; font-weight: bold; col
 .userJoinBox .userContent:nth-child(6) { height: 110px;}
 .userJoinFooter button { margin-top: 140px;width:1000px; height: 80px;}
 
+/* myPage */
+.myPage { margin-top:40px; }
+.myPageContainer { margin : 0 auto; width :1000px; }
+.myPageContainer .title { text-align: center; font-size: 30px; font-weight: normal; }
+.myPageBox { margin:0 0 60px 0; }
+.myPageBox span { font-size: 14px;  font-weight: 600; color : #888 }  
+.myPageBaseInfo { display : flex; height: 150px;}
+.myPageBaseInfo div:not(:first-child) { display : grid; height: 250px; }
+.myPageBaseInfo img {width : 400px; height: 250px; }
+.myPageBaseInfo span { border-bottom : 0.1px solid #e8e8e8; width: 600px; padding : 15px 0 0 25px}
+.myPageAddInfo { padding:110px 0 0 15px;}
+.myPageAddInfo div span{ display: grid; padding-top: 10px; border-bottom : 0.1px solid #e8e8e8; height: 35px;}
+.myPageHeader { display: flex;}
+.myPageHeader div{ border : 0.1px solid #e8e8e8; width: 90px; height: 30px; text-align: center; padding-top:12px; font-size:14px; font-weight: 600; margin-top:60px;}
+.chkHeader { background-color: #2a2b2c; color : white}
+.MyPageTableBox { width:1000px; border : 0.1px solid #e8e8e8; margin-bottom: 60px;}
+.MyPageTableBox thead td{ height: 40px;}
+.MyPageTableBox tbody td{ height: 100px;}
+.MyPageTableBox td {vertical-align : middle; text-align: center; border-top: 0.1px solid #e8e8e8; font-size : 14px; color : #888; } 
+.MyPageTableBox img { width:55%; height: 90%; } 
+
 /* Basket */
-.basket {  margin-top:40px;}
+.basket {  margin-top:40px; }
 .basketContainer { margin : 0 auto; width :1000px; }
 .basketContainer .title { text-align: center; font-size: 30px; font-weight: normal; }
 .basketBox { margin-top:60px; }
@@ -91,7 +112,6 @@ h1 span:nth-child(2) { padding-top: 5px; font-size: 12px; font-weight: bold; col
 .basketCareBox span { padding-top:4px; color : #888; display:list-item}
 .basketOrderBox { height: 130px; }
 .basketOrderBox button { height: 70px; width: 1000px; margin-top : 30px;}
-
 
 /* Banner */
 .banner { width: 100%; height: 70px; background-color: yellow; }
