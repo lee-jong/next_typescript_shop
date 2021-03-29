@@ -17,7 +17,7 @@ class UserInfo extends React.Component {
                     <span className="bar"/>
                     <span onClick={() => $nextRouter('/user/myPage')}>마이페이지</span>
                     <span className="bar"/>
-                    <span>커뮤니티</span>
+                    <span onClick={() => $nextRouter('/comm')}>커뮤니티</span>
                     <span className="bar"/>
                     <span>문의사항</span>
                 </div>

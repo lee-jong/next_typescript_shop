@@ -4,12 +4,10 @@ import MyPageInfo from '../../components/myPage'
 import Shipping from '../../components/myPage/Shipping'
 import Buy from '../../components/myPage/Buy'
 
-interface State { 
-    header : number 
-}
 
-class MyPage extends React.Component<State> {
-    state : State = {
+
+class MyPage extends React.Component {
+    state = {
         header : 1
     }
 

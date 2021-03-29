@@ -3,11 +3,11 @@ const Shopping = () => {
     return (
         <table className = "MyPageTableBox">
             <colgroup>
-                <col style={{width : '80px'}} />
-                <col style={{width : '300px'}} />
-                <col style={{width : 'auto'}} />
-                <col style={{width : 'auto'}} />
-                <col style={{width : 'auto'}} />
+                <col className="col140"/>
+                <col className="col300" />
+                <col className="colAuto"/>
+                <col className="colAuto"/>
+                <col className="colAuto"/>
             </colgroup>
             <thead>
                 <tr>
